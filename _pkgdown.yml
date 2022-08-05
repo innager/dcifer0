@@ -1,0 +1,7 @@
+url: https://innager.github.io/dcifer0/
+template:
+  bootstrap: 5
+figures:
+  fig.width: 7.2
+  fig.height: 7.2
+
