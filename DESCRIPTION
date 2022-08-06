@@ -20,7 +20,8 @@ LazyData: true
 RoxygenNote: 7.2.0
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/EPPIcenter/dcifer,
-    https://eppicenter.github.io/dcifer/
+    https://eppicenter.github.io/dcifer/,
+    https://innager.github.io/dcifer0/
 Suggests: 
     knitr,
     rmarkdown
