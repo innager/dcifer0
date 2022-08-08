@@ -10,3 +10,5 @@ src/*.dll
 inst/doc
 
 docs
+
+vignettes/vignetteDcifer*
