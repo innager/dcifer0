@@ -265,16 +265,16 @@ strains and <code><a href="ibdDat.html">ibdDat</a></code> for processing multi-s
 <span class="r-in"><span><span class="co"># log-likelihood for specific r values</span></span></span>
 <span class="r-in"><span><span class="fu">ibdPair</span><span class="op">(</span><span class="va">pair</span>, <span class="va">coip</span>, <span class="va">afreq</span>, M <span class="op">=</span> <span class="fl">1</span>, rhat <span class="op">=</span> <span class="cn">FALSE</span>, pval <span class="op">=</span> <span class="cn">FALSE</span>, llik <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
 <span class="r-in"><span>        reval <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0.15</span>, <span class="fl">0.38</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -480.6334 -480.2514 -480.1957      -Inf</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -480.7956 -480.2514 -480.1957      -Inf</span>
 <span class="r-in"><span><span class="co"># grid vs Newton's method</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/system.time.html" class="external-link">system.time</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="fu">ibdPair</span><span class="op">(</span><span class="va">pair</span>, <span class="va">coip</span>, <span class="va">afreq</span>, M <span class="op">=</span> <span class="fl">1</span>, mnewton <span class="op">=</span> <span class="cn">TRUE</span>,  tol <span class="op">=</span> <span class="fl">1e-5</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    user  system elapsed </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   0.002   0.001   0.002 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   0.002   0.000   0.002 </span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/system.time.html" class="external-link">system.time</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="fu">ibdPair</span><span class="op">(</span><span class="va">pair</span>, <span class="va">coip</span>, <span class="va">afreq</span>, M <span class="op">=</span> <span class="fl">1</span>, mnewton <span class="op">=</span> <span class="cn">FALSE</span>, nr  <span class="op">=</span> <span class="fl">1e5</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    user  system elapsed </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   0.112   0.003   0.116 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   0.102   0.012   0.114 </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
